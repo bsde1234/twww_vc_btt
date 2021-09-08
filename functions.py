@@ -272,7 +272,7 @@ async def play_song(requested_by, query, message, service):
     title, duration, thumbnail, artist, url = song
 
     if service == "youtube":
-        if duration >= 25200:
+        if duration >= 216000:
             return await m.edit("[ERROR]: SONG_TOO_BIG")
 
         await m.edit("__**Generating thumbnail.**__")
